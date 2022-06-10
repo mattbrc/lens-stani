@@ -34,6 +34,10 @@ function App() {
       console.log('error fetching profile', err)
     }
   }
+  
+  function isMobileDevice() {
+    return 'ontouchstart' in window || 'onmsgesturechange' in window;
+  }
 
   // Implement your connectWallet method here
   const connectWallet = async () => {
@@ -45,7 +49,18 @@ function App() {
         return;
       }
 
-      // Fancy method to request access to account.
+       if (isMobileDevice()) {
+        const dappUrl = "https://metamask.app.link/dapp/lens-stani-90piiwc1n-acid-gambit.vercel.app/";
+        return (
+          <a href={dappUrl}>
+            <button>
+              Connect to Metamask
+            </button>
+          </a>
+        )
+      }
+    
+      // Method to request access to account.
       const accounts = await ethereum.request({ method: "eth_requestAccounts" });
     
       // Boom! This should print out public address once we authorize Metamask.
