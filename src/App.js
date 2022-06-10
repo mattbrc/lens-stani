@@ -41,15 +41,7 @@ function App() {
 
   // Implement your connectWallet method here
   const connectWallet = async () => {
-    try {
-      const { ethereum } = window;
-
-      if (!ethereum) {
-        alert("Get MetaMask -> https://metamask.io/");
-        return;
-      }
-
-       if (isMobileDevice()) {
+    if (isMobileDevice()) {
         const dappUrl = "https://metamask.app.link/dapp/lens-stani-90piiwc1n-acid-gambit.vercel.app/";
         return (
           <a href={dappUrl}>
@@ -58,6 +50,14 @@ function App() {
             </button>
           </a>
         )
+    }
+  
+    try {
+      const { ethereum } = window;
+
+      if (!ethereum) {
+        alert("Get MetaMask -> https://metamask.io/");
+        return;
       }
     
       // Method to request access to account.
