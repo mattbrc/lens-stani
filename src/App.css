@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.profile-box {
+  background-color: #FDFDFD;
+  width: 500px;
+  height: 650px;
+  border-radius: 10%;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0F511E;
+}
+
+.contents-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mint-button {
+  background-color: #ABFE2D;
+  font-size: 18px;
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin: 20px 10px;
+  border-radius: 15px;
+  padding: 0px 2rem;
+}
+
+.profile-image {
+  padding-top: 25px;
+}
+
+.info {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 16px;
+}
+
+.profile-text {
+  color: #000;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
