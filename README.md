@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The project is a simple dapp with a connect to wallet function. The only person who can access the contents of the app after logging in is Stani, as the dapp is encrypted to the owner of Stani's Lens Profile NFT. The dapp additionally uses the Lens Social Graph to query some data from my personal profile, [@mattbrc.lens](https://www.lensfrens.xyz/mattbrc.lens). 
 
-You can view the live deploy at: [Deployed Site](https://lens-stani-krc8ez0b3-acid-gambit.vercel.app/).
+You can view the live deploy at: [Deployed Site](https://lens-stani-krc8ez0b3-acid-gambit.vercel.app/). Built and ended up interviewing with AAVE. Worth it to buidl and ship quick!
 
 ## Running the Project
 
